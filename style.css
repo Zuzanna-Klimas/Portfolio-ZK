@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #0a0a0f;
+  color: #eaeaea;
+}
+
+/* NAV */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: rgba(10,10,15,0.9);
+  position: sticky;
+  top: 0;
+}
+
+.nav a {
+  margin-left: 20px;
+  color: #aaa;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: #00ffe0;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #00ffe0;
+}
+
+.status {
+  margin-top: 10px;
+  color: #00ff88;
+}
+
+/* SECTIONS */
+.section {
+  padding: 60px 20px;
+}
+
+.card {
+  background: #11121a;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,255,200,0.05);
+  margin: 10px auto;
+  max-width: 800px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(0,255,200,0.2);
+}
+
+/* PROJECTS */
+.projects-grid {
+  display: grid;
+  gap: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.project button {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  background: #00ffe0;
+  color: #000;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.project button:hover {
+  background: #00ccaa;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  opacity: 0.5;
+}
+
+/* ANIMACJA */
+.section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.6s;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
